@@ -3,311 +3,361 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Phone Credit for Refugees</title>
-  <link href="styles.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <title>Phone Credit for Refugees — Connecting Families</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,700;0,900;1,300;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- Loader -->
-  <div class="loader" id="loader">
-    <div class="loader-ring"></div>
-    <p class="loader-text">connecting...</p>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-wrap">
+      <a href="#" class="nav-brand">
+        <span class="nav-dot"></span>
+        Phone Credit for Refugees
+      </a>
+      <div class="nav-right">
+        <a href="#impact">Impact</a>
+        <a href="#stories">Stories</a>
+        <a href="#donate" class="nav-donate">Donate</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-img" style="background-image:url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1920&q=80')"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-tag">Registered UK Charity</span>
+      <h1 class="hero-h">
+        The only thing standing between a family
+        <em>and hearing each other's voice</em>
+        is phone credit.
+      </h1>
+      <p class="hero-p">We put mobile credit directly into the hands of 12,000+ refugees across 48 countries — so they can call home, call for help, and know they are not alone.</p>
+      <div class="hero-btns">
+        <a href="#donate" class="btn-solid">Give Phone Credit</a>
+        <a href="#stories" class="btn-ghost">Read Their Stories</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker">
+    <div class="ticker-track">
+      <span>£5 gives 60 minutes of calls</span><span class="sep">◆</span>
+      <span>98p of every £1 goes to refugees</span><span class="sep">◆</span>
+      <span>12,000+ families reconnected</span><span class="sep">◆</span>
+      <span>48 countries reached</span><span class="sep">◆</span>
+      <span>Zero admin fees</span><span class="sep">◆</span>
+      <span>Gift Aid eligible</span><span class="sep">◆</span>
+      <span>£5 gives 60 minutes of calls</span><span class="sep">◆</span>
+      <span>98p of every £1 goes to refugees</span><span class="sep">◆</span>
+      <span>12,000+ families reconnected</span><span class="sep">◆</span>
+      <span>48 countries reached</span><span class="sep">◆</span>
+      <span>Zero admin fees</span><span class="sep">◆</span>
+      <span>Gift Aid eligible</span><span class="sep">◆</span>
+    </div>
   </div>
 
-  <!-- Floating Menu -->
-  <header class="site-header" id="site-header">
-    <a href="#top" class="header-logo">PCR</a>
-    <nav class="header-nav">
-      <a href="#mission">Mission</a>
-      <a href="#voices">Voices</a>
-      <a href="#give" class="header-give">Give Now</a>
-    </nav>
-  </header>
-
-  <!-- Chapter 01 — Opening -->
-  <section class="ch ch-open" id="top">
-    <div class="ch-open-bg">
-      <div class="ring r1"></div>
-      <div class="ring r2"></div>
-      <div class="ring r3"></div>
-    </div>
-    <div class="ch-open-center">
-      <p class="ch-eyebrow">Phone Credit for Refugees</p>
-      <h1 class="ch-open-headline">
-        <span class="line line-1">They</span>
-        <span class="line line-2">just want</span>
-        <span class="line line-3">to call<br>home.</span>
-      </h1>
-      <p class="ch-open-sub">100 million displaced people. Most have no way to reach the people they love.</p>
-      <a href="#mission" class="ch-open-cta">
-        <span>Read on</span>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-      </a>
-    </div>
-    <div class="ch-open-ticker" aria-hidden="true">
-      <span>A phone call costs pennies</span>
-      <span class="ticker-dot">·</span>
-      <span>To a refugee it is everything</span>
-      <span class="ticker-dot">·</span>
-      <span>A phone call costs pennies</span>
-      <span class="ticker-dot">·</span>
-      <span>To a refugee it is everything</span>
-      <span class="ticker-dot">·</span>
-      <span>A phone call costs pennies</span>
-      <span class="ticker-dot">·</span>
-      <span>To a refugee it is everything</span>
+  <!-- PULL QUOTE -->
+  <section class="pullquote">
+    <div class="pq-wrap">
+      <p class="pq-text">"I had not heard my daughter's voice in four months. When I finally called her, she said <strong>Mama, I knew you were alive.</strong> That phone call cost pennies. It gave me back my life."</p>
+      <cite class="pq-cite">— Fatima, 34 &nbsp;·&nbsp; Syria &nbsp;·&nbsp; Now in Germany</cite>
     </div>
   </section>
 
-  <!-- Chapter 02 — The Problem -->
-  <section class="ch ch-problem" id="mission">
-    <div class="ch-problem-left">
-      <span class="ch-num">01</span>
-      <h2 class="ch-problem-h">The silence<br><em>is deafening.</em></h2>
-      <p>When someone flees conflict, they lose almost everything in hours. But one of the most invisible losses is communication. No credit. No signal. No way to say <em>"I made it."</em></p>
-      <p>Phone Credit for Refugees puts credit directly into the hands of displaced people — through vetted NGO partners, with zero admin cut.</p>
-    </div>
-    <div class="ch-problem-right">
-      <div class="stat-big">
-        <span class="stat-n" data-target="100">0</span><span class="stat-suffix">M</span>
-        <p>people currently displaced globally</p>
+  <!-- IMPACT BENTO -->
+  <section class="bento" id="impact">
+    <div class="bento-wrap">
+
+      <div class="bento-card bento-big bento-img" style="background-image:url('https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1200&q=80')">
+        <div class="bento-img-overlay"></div>
+        <div class="bento-big-content">
+          <span class="bento-label">The scale of the crisis</span>
+          <h2>100 million people are displaced. Most cannot call home.</h2>
+        </div>
       </div>
-      <div class="stat-big">
-        <span class="stat-n" data-target="67">0</span><span class="stat-suffix">%</span>
-        <p>cannot afford basic phone credit</p>
+
+      <div class="bento-card bento-stat bento-teal">
+        <span class="bento-n">£5</span>
+        <p>buys 60 minutes of calls — enough to find a missing family member</p>
       </div>
-      <div class="stat-big">
-        <span class="stat-n" data-target="5">0</span><span class="stat-suffix">p</span>
-        <p>is the cost of a one-minute call</p>
+
+      <div class="bento-card bento-stat bento-dark">
+        <span class="bento-n">98%</span>
+        <p>of every donation goes directly to phone credit — nothing else</p>
       </div>
-    </div>
-  </section>
 
-  <!-- Chapter 03 — Pull Quote -->
-  <section class="ch ch-quote">
-    <div class="ch-quote-inner">
-      <div class="ch-quote-mark">"</div>
-      <blockquote>
-        I had not heard my daughter's voice in four months. When I finally called, she said <em>Mama, I knew you were alive.</em> I don't know how she knew. But she did.
-      </blockquote>
-      <cite>Fatima &nbsp;·&nbsp; Syria &nbsp;·&nbsp; Now in Germany</cite>
-    </div>
-  </section>
+      <div class="bento-card bento-wide bento-cream">
+        <div class="bento-wide-inner">
+          <h3>What a phone call makes possible</h3>
+          <div class="bento-pills">
+            <span>👨‍👩‍👧 Family reunification</span>
+            <span>🚨 Emergency services</span>
+            <span>📋 Asylum registration</span>
+            <span>🗺️ Safe navigation</span>
+            <span>⚖️ Legal aid access</span>
+            <span>💊 Medical help</span>
+          </div>
+        </div>
+      </div>
 
-  <!-- Chapter 04 — Voices / Stories -->
-  <section class="ch ch-voices" id="voices">
-    <div class="ch-voices-header">
-      <span class="ch-num">02</span>
-      <h2>Three people.<br>Three phone calls.<br><em>Three lives changed.</em></h2>
-    </div>
-    <div class="ch-voices-cards">
+      <div class="bento-card bento-stat bento-orange">
+        <span class="bento-n">12k+</span>
+        <p>refugees reconnected with their families since we launched</p>
+      </div>
 
-      <article class="voice-card vc-1">
-        <div class="vc-country">🇸🇩 Sudan</div>
-        <div class="vc-name">Amara, 27</div>
-        <p class="vc-story">"I walked 11 days. When I got credit, I called my mother. She had been told I was dead. The first thing she said was your name — just your name, over and over."</p>
-        <div class="vc-outcome">Reunited with family after 4 months of silence</div>
-      </article>
-
-      <article class="voice-card vc-2">
-        <div class="vc-country">🇦🇫 Afghanistan</div>
-        <div class="vc-name">Khalid, 31</div>
-        <p class="vc-story">"Without a phone call I could not register with UNHCR. No registration means no food, no shelter, no legal identity. One phone call made me exist again."</p>
-        <div class="vc-outcome">Secured legal refugee status via phone registration</div>
-      </article>
-
-      <article class="voice-card vc-3">
-        <div class="vc-country">🇸🇾 Syria</div>
-        <div class="vc-name">Lina, 19</div>
-        <p class="vc-story">"I was alone in a camp with no idea where my brother was. I called every number I had. On the 9th call, someone had seen him. He was 40 miles away, also looking for me."</p>
-        <div class="vc-outcome">Located missing sibling through network of calls</div>
-      </article>
+      <div class="bento-card bento-stat bento-mid">
+        <span class="bento-n">48</span>
+        <p>countries where we've delivered phone credit this year</p>
+      </div>
 
     </div>
   </section>
 
-  <!-- Chapter 05 — How -->
-  <section class="ch ch-how">
-    <div class="ch-how-label">
-      <span class="ch-num">03</span>
-      <h2>What happens<br>when you give</h2>
-    </div>
-    <div class="ch-how-steps">
-      <div class="how-step">
-        <div class="how-line"></div>
-        <span class="how-n">£5</span>
-        <p>You donate. Every single penny buys phone credit. Nothing funds admin.</p>
+  <!-- STORIES -->
+  <section class="stories" id="stories">
+    <div class="stories-wrap">
+      <div class="stories-header">
+        <p class="section-eyebrow">Their words, not ours</p>
+        <h2>Three calls.<br>Three lives changed.</h2>
       </div>
-      <div class="how-step">
-        <div class="how-line"></div>
-        <span class="how-n">Bulk</span>
-        <p>We buy credit at bulk network rates, tripling your purchasing power.</p>
-      </div>
-      <div class="how-step">
-        <div class="how-line"></div>
-        <span class="how-n">NGO</span>
-        <p>Trusted on-the-ground partners distribute directly to verified refugees.</p>
-      </div>
-      <div class="how-step">
-        <div class="how-line how-line-last"></div>
-        <span class="how-n">📞</span>
-        <p>A call is made. A family breathes again.</p>
+      <div class="stories-grid">
+
+        <article class="story" style="--story-img: url('https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=600&q=80')">
+          <div class="story-top">
+            <div class="story-photo"></div>
+            <div class="story-meta">
+              <strong>Amara, 27</strong>
+              <span>Sudan &nbsp;·&nbsp; Arrived via Libya</span>
+            </div>
+          </div>
+          <p class="story-text">"I walked for 11 days. When I got phone credit, I called my mother. She had been told I was dead. I heard her say my name — just my name, over and over again. That is all I needed."</p>
+          <div class="story-outcome">
+            <span class="outcome-dot"></span>
+            Reunited with family after 4 months of silence
+          </div>
+        </article>
+
+        <article class="story story-featured" style="--story-img: url('https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=600&q=80')">
+          <div class="story-top">
+            <div class="story-photo"></div>
+            <div class="story-meta">
+              <strong>Fatima, 34</strong>
+              <span>Syria &nbsp;·&nbsp; Now in Germany</span>
+            </div>
+          </div>
+          <p class="story-text">"My daughter was 6 when we were separated at the border. For 7 weeks I did not know if she was alive. Phone credit let me reach aid workers who found her. I cannot explain what that meant."</p>
+          <div class="story-outcome">
+            <span class="outcome-dot"></span>
+            Located her daughter through aid network calls
+          </div>
+        </article>
+
+        <article class="story" style="--story-img: url('https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?auto=format&fit=crop&w=600&q=80')">
+          <div class="story-top">
+            <div class="story-photo"></div>
+            <div class="story-meta">
+              <strong>Khalid, 31</strong>
+              <span>Afghanistan &nbsp;·&nbsp; Awaiting asylum</span>
+            </div>
+          </div>
+          <p class="story-text">"Without a phone I could not register with UNHCR. No registration means no food, no shelter, no legal identity. One call made me exist again. I had not existed for months."</p>
+          <div class="story-outcome">
+            <span class="outcome-dot"></span>
+            Secured legal refugee status via phone registration
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
 
-  <!-- Chapter 06 — Give -->
-  <section class="ch ch-give" id="give">
-    <div class="ch-give-left">
-      <span class="ch-num light">04</span>
-      <h2 class="ch-give-h">Give someone<br>a voice.</h2>
-      <p>Choose your amount. Switch to monthly to double your impact. 98p of every £1 goes directly to phone credit.</p>
-      <ul class="give-promises">
-        <li><span>✓</span> 98% directly to refugees</li>
-        <li><span>✓</span> Registered UK charity</li>
-        <li><span>✓</span> Gift Aid eligible</li>
-        <li><span>✓</span> Cancel monthly anytime</li>
-      </ul>
-    </div>
-    <div class="ch-give-right">
-      <div class="give-toggle">
-        <button class="give-toggle-btn active" id="btn-once" onclick="setFreq('once')">Once</button>
-        <button class="give-toggle-btn" id="btn-monthly" onclick="setFreq('monthly')">Monthly</button>
-        <div class="give-toggle-slider" id="give-slider"></div>
+  <!-- HOW IT WORKS -->
+  <section class="how">
+    <div class="how-wrap">
+      <div class="how-left">
+        <p class="section-eyebrow">Transparent &amp; direct</p>
+        <h2>From your pocket<br>to their phone</h2>
+        <p class="how-sub">No overhead. No bureaucracy. The fastest route from your donation to a family's reconnection.</p>
+        <a href="#donate" class="btn-solid">Donate Now</a>
       </div>
-      <div class="give-amounts">
-        <button class="give-amt active" onclick="setAmt(this,5)">
-          <span class="ga-val">£5</span>
-          <span class="ga-eq">= 60 min of calls</span>
-        </button>
-        <button class="give-amt" onclick="setAmt(this,10)">
-          <span class="ga-val">£10</span>
-          <span class="ga-eq">= 2 hrs of calls</span>
-        </button>
-        <button class="give-amt" onclick="setAmt(this,25)">
-          <span class="ga-val">£25</span>
-          <span class="ga-eq">= a family for a week</span>
-        </button>
-        <button class="give-amt" onclick="setAmt(this,50)">
-          <span class="ga-val">£50</span>
-          <span class="ga-eq">= a month of lifelines</span>
-        </button>
+      <div class="how-right">
+        <div class="how-step">
+          <div class="how-step-n">01</div>
+          <div class="how-step-body">
+            <h4>You donate</h4>
+            <p>Every penny of your donation buys mobile phone credit. Nothing funds salaries or overheads.</p>
+          </div>
+        </div>
+        <div class="how-step">
+          <div class="how-step-n">02</div>
+          <div class="how-step-body">
+            <h4>We buy in bulk</h4>
+            <p>We negotiate bulk rates with mobile networks worldwide, tripling your purchasing power.</p>
+          </div>
+        </div>
+        <div class="how-step">
+          <div class="how-step-n">03</div>
+          <div class="how-step-body">
+            <h4>Partners deliver</h4>
+            <p>Vetted NGO partners distribute credit directly to verified refugees in camps and transit zones.</p>
+          </div>
+        </div>
+        <div class="how-step">
+          <div class="how-step-n">04</div>
+          <div class="how-step-body">
+            <h4>A call is made</h4>
+            <p>A family hears each other's voice. Someone calls for help. A person finds their way home.</p>
+          </div>
+        </div>
       </div>
-      <div class="give-custom-row">
-        <span>Other amount: £</span>
-        <input type="number" id="give-custom" placeholder="0" min="1" oninput="setCustom(this)" />
-      </div>
-      <div class="give-impact" id="give-impact">
-        <strong>£5</strong> once — enough for a mother to tell her child she's alive.
-      </div>
-      <button class="give-submit" id="give-btn">Donate £5 &rarr;</button>
-      <p class="give-secure">🔒 Secure payment via Stripe</p>
     </div>
   </section>
 
-  <!-- Closing -->
-  <section class="ch ch-close">
-    <div class="ch-close-inner">
-      <p class="ch-close-small">Phone Credit for Refugees · Registered Charity No. 1234567 · England & Wales</p>
-      <h2 class="ch-close-big">Every call<br>matters.</h2>
-      <div class="ch-close-links">
-        <a href="mailto:hello@phonecreditforrefugees.org">hello@phonecreditforrefugees.org</a>
-        <span>·</span>
-        <a href="#">Privacy</a>
-        <span>·</span>
-        <a href="#">Press</a>
-        <span>·</span>
-        <a href="#">Volunteer</a>
+  <!-- DONATE -->
+  <section class="donate" id="donate">
+    <div class="donate-img" style="background-image:url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80')">
+      <div class="donate-img-overlay"></div>
+      <div class="donate-left-content">
+        <h2>Give someone<br>a voice today.</h2>
+        <p>100 million people are displaced. You can help one of them call home — right now.</p>
       </div>
-      <p class="ch-close-copy">&copy; 2026 Phone Credit for Refugees</p>
+    </div>
+    <div class="donate-form">
+      <p class="donate-eyebrow">Make a donation</p>
+      <div class="donate-freq">
+        <button class="freq active" id="f-once" onclick="setF('once')">One-off</button>
+        <button class="freq" id="f-monthly" onclick="setF('monthly')">Monthly</button>
+      </div>
+      <div class="donate-amounts">
+        <button class="amt active" onclick="setA(this,5)"><span class="amt-v">£5</span><span class="amt-l">60 min</span></button>
+        <button class="amt" onclick="setA(this,10)"><span class="amt-v">£10</span><span class="amt-l">2 hours</span></button>
+        <button class="amt" onclick="setA(this,25)"><span class="amt-v">£25</span><span class="amt-l">Family/week</span></button>
+        <button class="amt" onclick="setA(this,50)"><span class="amt-v">£50</span><span class="amt-l">Month of calls</span></button>
+      </div>
+      <div class="donate-custom">
+        <label>Other: £</label>
+        <input type="number" id="custom-input" placeholder="Enter amount" min="1" oninput="setCustom(this)" />
+      </div>
+      <div class="donate-impact" id="d-impact">
+        <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <span><strong>£5 once</strong> — enough to reunite a mother with her child's voice.</span>
+      </div>
+      <button class="donate-btn" id="d-btn">Donate £5 →</button>
+      <p class="donate-trust">🔒 Secure &nbsp;·&nbsp; Registered Charity No. 1234567 &nbsp;·&nbsp; Gift Aid eligible</p>
     </div>
   </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-wrap">
+      <div class="footer-brand">
+        <span class="nav-dot"></span>
+        <strong>Phone Credit for Refugees</strong>
+        <p>Registered Charity No. 1234567 &nbsp;·&nbsp; England & Wales</p>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h5>Organisation</h5>
+          <a href="#impact">Our Impact</a>
+          <a href="#stories">Stories</a>
+          <a href="#">Annual Report</a>
+        </div>
+        <div>
+          <h5>Get Involved</h5>
+          <a href="#donate">Donate</a>
+          <a href="#">Fundraise</a>
+          <a href="#">Volunteer</a>
+          <a href="#">Corporate</a>
+        </div>
+        <div>
+          <h5>Contact</h5>
+          <a href="mailto:hello@phonecreditforrefugees.org">Email us</a>
+          <a href="#">Press</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Phone Credit for Refugees. Made with care for the 100 million.</p>
+    </div>
+  </footer>
 
   <script>
-    /* Loader */
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        const l = document.getElementById('loader');
-        l.classList.add('hidden');
-        document.body.classList.add('loaded');
-      }, 1200);
-    });
+    /* Nav on scroll */
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('nav-solid', window.scrollY > 60));
 
-    /* Header on scroll */
-    const hdr = document.getElementById('site-header');
-    window.addEventListener('scroll', () => {
-      hdr.classList.toggle('visible', window.scrollY > 80);
-    });
-
-    /* Animate lines on load */
-    setTimeout(() => {
-      document.querySelectorAll('.line').forEach((el, i) => {
-        setTimeout(() => el.classList.add('in'), 300 + i * 180);
-      });
-    }, 1300);
-
-    /* Intersection observer for fade-ins */
+    /* Scroll reveal */
     const io = new IntersectionObserver(entries => {
-      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('seen'); });
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
     }, { threshold: 0.1 });
-    document.querySelectorAll('.ch-problem-left, .ch-problem-right, .voice-card, .how-step, .ch-give-left, .ch-give-right, .ch-quote-inner, .ch-voices-header').forEach(el => io.observe(el));
+    document.querySelectorAll('.bento-card, .story, .how-step, .pq-wrap, .donate-img, .donate-form, .stories-header, .how-left, .how-right').forEach(el => io.observe(el));
 
     /* Counters */
     const cio = new IntersectionObserver(entries => {
       entries.forEach(e => {
-        if (e.isIntersecting && !e.target._counted) {
-          e.target._counted = true;
-          const target = +e.target.dataset.target;
-          let cur = 0;
-          const step = target / 60;
-          const tick = () => {
-            cur = Math.min(cur + step, target);
-            e.target.textContent = Math.floor(cur);
-            if (cur < target) requestAnimationFrame(tick);
-            else e.target.textContent = target;
-          };
-          requestAnimationFrame(tick);
+        if (e.isIntersecting && !e.target._done) {
+          e.target._done = true;
+          animateCount(e.target);
         }
       });
     }, { threshold: 0.5 });
-    document.querySelectorAll('.stat-n').forEach(el => cio.observe(el));
+    document.querySelectorAll('.bento-n').forEach(el => cio.observe(el));
+    function animateCount(el) {
+      const text = el.textContent;
+      const num = parseFloat(text.replace(/[^0-9.]/g, ''));
+      if (!num) return;
+      const suffix = text.replace(/[0-9.]/g, '');
+      let cur = 0;
+      const step = num / 50;
+      const tick = () => {
+        cur = Math.min(cur + step, num);
+        el.textContent = (num < 10 ? cur.toFixed(0) : Math.floor(cur)) + suffix;
+        if (cur < num) requestAnimationFrame(tick);
+        else el.textContent = text;
+      };
+      requestAnimationFrame(tick);
+    }
 
     /* Donate widget */
     let amt = 5, freq = 'once';
     const impacts = {
-      5:  '<strong>£5</strong> — enough for a mother to tell her child she\'s alive.',
-      10: '<strong>£10</strong> — enough to navigate a full asylum registration call.',
-      25: '<strong>£25</strong> — a week of connection for an entire displaced family.',
-      50: '<strong>£50</strong> — a month of lifelines for someone who has lost everything.'
+      5:  'enough to reunite a mother with her child\'s voice.',
+      10: 'enough to navigate a full asylum registration call.',
+      25: 'a week of connection for an entire displaced family.',
+      50: 'a month of lifelines for someone who has lost everything.'
     };
-
-    function setAmt(btn, val) {
-      document.querySelectorAll('.give-amt').forEach(b => b.classList.remove('active'));
+    function setA(btn, val) {
+      document.querySelectorAll('.amt').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      document.getElementById('give-custom').value = '';
-      amt = val;
-      refresh();
+      document.getElementById('custom-input').value = '';
+      amt = val; refresh();
     }
     function setCustom(inp) {
-      document.querySelectorAll('.give-amt').forEach(b => b.classList.remove('active'));
-      amt = parseFloat(inp.value) || 0;
-      refresh();
+      document.querySelectorAll('.amt').forEach(b => b.classList.remove('active'));
+      amt = parseFloat(inp.value) || 0; refresh();
     }
-    function setFreq(f) {
+    function setF(f) {
       freq = f;
-      document.getElementById('btn-once').classList.toggle('active', f === 'once');
-      document.getElementById('btn-monthly').classList.toggle('active', f === 'monthly');
-      document.getElementById('give-slider').style.transform = f === 'monthly' ? 'translateX(100%)' : 'translateX(0)';
+      document.getElementById('f-once').classList.toggle('active', f === 'once');
+      document.getElementById('f-monthly').classList.toggle('active', f === 'monthly');
       refresh();
     }
     function refresh() {
-      const imp = document.getElementById('give-impact');
-      const btn = document.getElementById('give-btn');
-      imp.innerHTML = (impacts[amt] || `<strong>£${amt}</strong> — every penny goes to phone credit.`) + (freq === 'monthly' ? ' <em>Every month.</em>' : '');
-      btn.innerHTML = `Donate £${amt}${freq === 'monthly' ? '/mo' : ''} &rarr;`;
+      const freqLabel = freq === 'monthly' ? '/mo' : ' once';
+      const imp = impacts[amt] || 'every penny goes directly to phone credit.';
+      document.getElementById('d-impact').querySelector('span').innerHTML = `<strong>£${amt}${freqLabel}</strong> — ${imp}`;
+      document.getElementById('d-btn').textContent = `Donate £${amt}${freq === 'monthly' ? '/month' : ''} →`;
     }
   </script>
-
 </body>
 </html>
