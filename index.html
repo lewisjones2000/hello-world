@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Phone Credit for Refugees</title>
   <link href="styles.css" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 </head>
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar">
+  <nav class="navbar" id="navbar">
     <div class="container nav-inner">
       <div class="logo">
         <span class="logo-icon">📱</span>
@@ -18,8 +18,8 @@
       </div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#stories">Stories</a></li>
         <li><a href="#impact">Impact</a></li>
-        <li><a href="#how-it-works">How It Works</a></li>
         <li><a href="#donate" class="btn-nav">Donate Now</a></li>
       </ul>
     </div>
@@ -27,45 +27,127 @@
 
   <!-- Hero -->
   <section class="hero">
+    <div class="hero-bg-anim">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
     <div class="container hero-inner">
-      <div class="hero-content">
-        <span class="badge">Making Connections Matter</span>
-        <h1>A Phone Call Can Change Everything</h1>
-        <p>Refugees fleeing crisis are often cut off from family, emergency services, and vital information. We bridge that gap by donating phone credit to those who need it most.</p>
+      <div class="hero-content reveal">
+        <span class="badge pulse-badge">Every second counts</span>
+        <h1>The Last Thing They<br><span class="typewriter" id="typewriter"></span></h1>
+        <p class="hero-sub">Millions of refugees are cut off from everyone they love — with no way to call for help, find their family, or know if anyone is looking for them. <strong>One phone call can change everything.</strong></p>
         <div class="hero-actions">
-          <a href="#donate" class="btn-primary">Donate Phone Credit</a>
-          <a href="#how-it-works" class="btn-secondary">Learn More</a>
+          <a href="#donate" class="btn-primary btn-glow">Give Phone Credit Now</a>
+          <a href="#stories" class="btn-secondary">Hear Their Stories</a>
+        </div>
+        <p class="hero-footnote">💛 £5 gives 60 minutes of calls. Takes 60 seconds to donate.</p>
+      </div>
+      <div class="hero-visual reveal reveal-delay">
+        <div class="phone-mockup">
+          <div class="phone-screen">
+            <div class="chat-bubble incoming animate-chat-1">Mama, are you there? 😢</div>
+            <div class="chat-bubble outgoing animate-chat-2">I'm here. I'm safe. 💛</div>
+            <div class="chat-bubble incoming animate-chat-3">Thank God. We've been searching for you for 3 months...</div>
+            <div class="signal-bar">
+              <span class="signal-dot"></span>
+              <span class="signal-dot"></span>
+              <span class="signal-dot"></span>
+              <span class="signal-text">Connected</span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="hero-image">
-        <div class="phone-card">
-          <div class="phone-icon">📞</div>
-          <p class="phone-stat">Every £5 provides</p>
-          <h2 class="phone-minutes">60 minutes</h2>
-          <p class="phone-sub">of life-changing connection</p>
-        </div>
+    </div>
+    <div class="scroll-hint">
+      <span>scroll to see the impact</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- Heartbreak strip -->
+  <section class="heartbreak-strip">
+    <div class="strip-inner marquee">
+      <span>👨‍👩‍👧 Families separated &nbsp;·&nbsp; </span>
+      <span>📵 No way to call for help &nbsp;·&nbsp; </span>
+      <span>🌍 Lost in an unfamiliar country &nbsp;·&nbsp; </span>
+      <span>😢 Children searching for parents &nbsp;·&nbsp; </span>
+      <span>🆘 No access to emergency services &nbsp;·&nbsp; </span>
+      <span>💔 Months without hearing a loved one's voice &nbsp;·&nbsp; </span>
+      <span>👨‍👩‍👧 Families separated &nbsp;·&nbsp; </span>
+      <span>📵 No way to call for help &nbsp;·&nbsp; </span>
+      <span>🌍 Lost in an unfamiliar country &nbsp;·&nbsp; </span>
+      <span>😢 Children searching for parents &nbsp;·&nbsp; </span>
+    </div>
+  </section>
+
+  <!-- Stats Counter -->
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat-item reveal">
+        <h3 class="counter" data-target="12000">0</h3>
+        <p>Refugees Reconnected</p>
+      </div>
+      <div class="stat-item reveal reveal-delay-1">
+        <h3 class="counter" data-target="48">0</h3>
+        <p>Countries Reached</p>
+      </div>
+      <div class="stat-item reveal reveal-delay-2">
+        <h3><span class="counter" data-target="250">0</span>k+</h3>
+        <p>Worth of Credit Donated</p>
+      </div>
+      <div class="stat-item reveal reveal-delay-3">
+        <h3 class="counter" data-target="98">0</h3>
+        <p>% Funds to Beneficiaries</p>
       </div>
     </div>
   </section>
 
-  <!-- Stats -->
-  <section class="stats">
-    <div class="container stats-grid">
-      <div class="stat-item">
-        <h3>12,000+</h3>
-        <p>Refugees Helped</p>
+  <!-- Emotional Story Section -->
+  <section class="stories section" id="stories">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Real People. Real Stories.</span>
+        <h2>Behind every phone call<br>is a family trying to survive</h2>
       </div>
-      <div class="stat-item">
-        <h3>48 Countries</h3>
-        <p>Reached Worldwide</p>
-      </div>
-      <div class="stat-item">
-        <h3>£250,000+</h3>
-        <p>Credit Donated</p>
-      </div>
-      <div class="stat-item">
-        <h3>98%</h3>
-        <p>Funds to Beneficiaries</p>
+      <div class="stories-grid">
+
+        <div class="story-card reveal">
+          <div class="story-flag">🇸🇩 Sudan</div>
+          <div class="story-photo">
+            <div class="story-avatar" style="background: linear-gradient(135deg, #f6a623, #e85d26);">A</div>
+          </div>
+          <blockquote class="story-quote">
+            "I walked for 11 days. When I finally got phone credit, the first thing I did was call my mother. She had been told I was dead. I heard her crying and I cried too. That call saved both of us."
+          </blockquote>
+          <cite>Amara, 27 — arrived via Libya</cite>
+          <div class="story-impact-tag">Reunited with family after 4 months</div>
+        </div>
+
+        <div class="story-card reveal reveal-delay-1 story-card--featured">
+          <div class="story-flag">🇸🇾 Syria</div>
+          <div class="story-photo">
+            <div class="story-avatar" style="background: linear-gradient(135deg, #667eea, #764ba2);">F</div>
+          </div>
+          <blockquote class="story-quote">
+            "My daughter was 6 when we were separated at the border. For 7 weeks I did not know if she was alive. Phone credit let me reach the aid workers who found her. I cannot put into words what that means."
+          </blockquote>
+          <cite>Fatima, 34 — now in Germany</cite>
+          <div class="story-impact-tag">Located missing child through aid network</div>
+        </div>
+
+        <div class="story-card reveal reveal-delay-2">
+          <div class="story-flag">🇦🇫 Afghanistan</div>
+          <div class="story-photo">
+            <div class="story-avatar" style="background: linear-gradient(135deg, #11998e, #38ef7d);">K</div>
+          </div>
+          <blockquote class="story-quote">
+            "Without phone credit I could not register with UNHCR. I had no address, no documents, and no way to prove I existed. A single phone call started the process that gave me legal status."
+          </blockquote>
+          <cite>Khalid, 31 — awaiting asylum decision</cite>
+          <div class="story-impact-tag">Secured legal status via phone registration</div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -73,23 +155,37 @@
   <!-- About -->
   <section class="about section" id="about">
     <div class="container about-grid">
-      <div class="about-text">
-        <span class="section-label">Our Mission</span>
-        <h2>Staying Connected is a Human Right</h2>
-        <p>When people are forced to flee their homes, they lose almost everything — including the ability to stay in contact with loved ones, access emergency help, or navigate an unfamiliar country.</p>
-        <p>Phone Credit for Refugees is a registered non-profit that sources and distributes mobile phone credit directly to refugees in camps, transit zones, and resettlement centres around the world.</p>
-        <ul class="about-list">
-          <li>✅ Contact with family separated by conflict</li>
-          <li>✅ Access to emergency and legal services</li>
-          <li>✅ Navigation tools and translation apps</li>
-          <li>✅ Registration with aid organisations</li>
-        </ul>
+      <div class="about-visual reveal">
+        <div class="about-image-stack">
+          <div class="about-card-float card-1">
+            <span class="float-icon">📞</span>
+            <div>
+              <strong>Right now</strong>
+              <p>A mother is trying to reach her son</p>
+            </div>
+          </div>
+          <div class="about-card-float card-2">
+            <span class="float-icon">🆘</span>
+            <div>
+              <strong>Right now</strong>
+              <p>Someone needs emergency help and can't call</p>
+            </div>
+          </div>
+          <div class="about-card-float card-3">
+            <span class="float-icon">💛</span>
+            <div>
+              <strong>With your help</strong>
+              <p>They won't have to face this alone</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="about-quote">
-        <blockquote>
-          "The first thing I did when I got phone credit was call my mother. She had not heard from me in four months. I cannot explain what that meant."
-          <cite>— Amara, 27, arrived from Sudan</cite>
-        </blockquote>
+      <div class="about-text reveal reveal-delay">
+        <span class="section-label">Our Mission</span>
+        <h2>A phone isn't a luxury.<br>It's a lifeline.</h2>
+        <p>When people flee conflict, disaster, or persecution, they lose almost everything overnight. But one of the cruelest losses is silence — being completely unreachable to the people who love them.</p>
+        <p>Phone Credit for Refugees sources mobile credit in bulk and delivers it directly to displaced people through trusted NGO partners on the ground. <strong>No admin fees. No middlemen. Just connection.</strong></p>
+        <a href="#donate" class="btn-primary btn-glow" style="display:inline-block; margin-top: 28px;">Help Someone Call Home</a>
       </div>
     </div>
   </section>
@@ -97,84 +193,77 @@
   <!-- Impact -->
   <section class="impact section" id="impact">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label">Real Impact</span>
-        <h2>Where Your Donation Goes</h2>
+      <div class="section-header reveal">
+        <span class="section-label">What Your Money Does</span>
+        <h2>Every pound is a lifeline</h2>
+        <p class="section-sub">No salaries. No offices. Your donation goes directly to phone credit.</p>
       </div>
       <div class="impact-grid">
-        <div class="impact-card">
-          <div class="impact-icon">👨‍👩‍👧</div>
+        <div class="impact-card reveal">
+          <div class="impact-icon-wrap">👨‍👩‍👧</div>
           <h3>Family Reunification</h3>
-          <p>Helping displaced people locate and communicate with family members separated during flight.</p>
+          <p>Parents find children. Siblings confirm each other are alive. Spouses separated at borders finally speak again.</p>
+          <div class="impact-stat">47% of all calls made</div>
         </div>
-        <div class="impact-card">
-          <div class="impact-icon">🚨</div>
+        <div class="impact-card reveal reveal-delay-1">
+          <div class="impact-icon-wrap">🚨</div>
           <h3>Emergency Access</h3>
-          <p>Ensuring refugees can reach emergency services, legal aid, and medical support when needed.</p>
+          <p>Calling for medical help, legal aid, or reporting abuse. Phone credit can be the difference between life and death.</p>
+          <div class="impact-stat">Used in 3,200+ emergencies</div>
         </div>
-        <div class="impact-card">
-          <div class="impact-icon">🗺️</div>
+        <div class="impact-card reveal reveal-delay-2">
+          <div class="impact-icon-wrap">🗺️</div>
           <h3>Safe Navigation</h3>
-          <p>Access to maps, translation tools, and safety information for people in unfamiliar territory.</p>
+          <p>Maps, translation apps, and safety alerts help people avoid dangerous routes and reach safety faster.</p>
+          <div class="impact-stat">Across 48 countries</div>
         </div>
-        <div class="impact-card">
-          <div class="impact-icon">📋</div>
-          <h3>Registration & Aid</h3>
-          <p>Communicating with UNHCR, NGOs, and government bodies to secure asylum and essential aid.</p>
+        <div class="impact-card reveal reveal-delay-3">
+          <div class="impact-icon-wrap">📋</div>
+          <h3>Legal Registration</h3>
+          <p>Registering with UNHCR, asylum applications, communicating with lawyers — all require a working phone.</p>
+          <div class="impact-stat">8,400+ registrations enabled</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- How It Works -->
-  <section class="how-it-works section" id="how-it-works">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">The Process</span>
-        <h2>How It Works</h2>
+  <!-- Urgency Banner -->
+  <section class="urgency-banner">
+    <div class="container urgency-inner reveal">
+      <div class="urgency-text">
+        <h2>Right now, 100 million people are displaced worldwide.</h2>
+        <p>Most of them cannot afford the phone credit to call home — or call for help.</p>
       </div>
-      <div class="steps">
-        <div class="step">
-          <div class="step-number">1</div>
-          <h3>You Donate</h3>
-          <p>Make a one-off or monthly donation. Every pound goes towards purchasing mobile phone credit.</p>
-        </div>
-        <div class="step-connector"></div>
-        <div class="step">
-          <div class="step-number">2</div>
-          <h3>We Source Credit</h3>
-          <p>We partner with mobile networks worldwide to buy credit at bulk rates, maximising your impact.</p>
-        </div>
-        <div class="step-connector"></div>
-        <div class="step">
-          <div class="step-number">3</div>
-          <h3>Partners Distribute</h3>
-          <p>Our on-the-ground NGO partners distribute credit directly to verified refugees in need.</p>
-        </div>
-        <div class="step-connector"></div>
-        <div class="step">
-          <div class="step-number">4</div>
-          <h3>Lives Are Changed</h3>
-          <p>Refugees make vital calls, access critical services, and maintain their dignity and hope.</p>
-        </div>
-      </div>
+      <a href="#donate" class="btn-primary btn-glow btn-large">Make a Call Possible</a>
     </div>
   </section>
 
   <!-- Donate -->
   <section class="donate section" id="donate">
     <div class="container donate-inner">
-      <div class="section-header light">
-        <span class="section-label light">Make a Difference</span>
-        <h2>Donate Today</h2>
-        <p>Choose an amount below or enter your own. Every donation connects a refugee with someone they love.</p>
+      <div class="section-header light reveal">
+        <span class="section-label light">Change a Life Today</span>
+        <h2>Give the gift of connection</h2>
+        <p>Choose what feels right. Every penny goes to phone credit.</p>
       </div>
-      <div class="donate-form-wrap">
+      <div class="donate-form-wrap reveal">
         <div class="amount-options">
-          <button class="amount-btn active" onclick="selectAmount(this, 5)">£5</button>
-          <button class="amount-btn" onclick="selectAmount(this, 10)">£10</button>
-          <button class="amount-btn" onclick="selectAmount(this, 25)">£25</button>
-          <button class="amount-btn" onclick="selectAmount(this, 50)">£50</button>
+          <button class="amount-btn active" onclick="selectAmount(this, 5)">
+            <span class="amount-val">£5</span>
+            <span class="amount-desc">60 mins of calls</span>
+          </button>
+          <button class="amount-btn" onclick="selectAmount(this, 10)">
+            <span class="amount-val">£10</span>
+            <span class="amount-desc">2 hrs of connection</span>
+          </button>
+          <button class="amount-btn" onclick="selectAmount(this, 25)">
+            <span class="amount-val">£25</span>
+            <span class="amount-desc">A family for a week</span>
+          </button>
+          <button class="amount-btn" onclick="selectAmount(this, 50)">
+            <span class="amount-val">£50</span>
+            <span class="amount-desc">A month of lifelines</span>
+          </button>
         </div>
         <div class="custom-amount">
           <label for="custom">Or enter your own amount:</label>
@@ -184,31 +273,50 @@
           </div>
         </div>
         <div class="impact-preview" id="impact-preview">
-          <strong>£5</strong> provides <strong>60 minutes</strong> of phone credit — enough to reunite a family.
+          <span class="preview-icon">💛</span>
+          <strong>£5</strong> gives <strong>60 minutes</strong> of calls — enough for a mother to hear her child's voice for the first time in months.
         </div>
         <div class="frequency-options">
-          <button class="freq-btn active" onclick="selectFreq(this, 'one-off')">One-off</button>
-          <button class="freq-btn" onclick="selectFreq(this, 'monthly')">Monthly</button>
+          <button class="freq-btn active" onclick="selectFreq(this, 'one-off')">One-off donation</button>
+          <button class="freq-btn" onclick="selectFreq(this, 'monthly')">Monthly — double the impact</button>
         </div>
-        <a href="#" class="btn-donate" id="donate-btn">Donate £5 Now</a>
-        <p class="secure-note">🔒 Secure payment · Registered charity · Gift Aid eligible</p>
+        <a href="#" class="btn-donate btn-glow" id="donate-btn">Donate £5 — Give Someone a Voice</a>
+        <p class="secure-note">🔒 Secure · Registered Charity · Gift Aid eligible · 98p in every £1 to refugees</p>
       </div>
     </div>
   </section>
 
-  <!-- Partners -->
-  <section class="partners section">
+  <!-- How It Works -->
+  <section class="how-it-works section" id="how-it-works">
     <div class="container">
-      <div class="section-header">
-        <span class="section-label">Our Partners</span>
-        <h2>Working Together on the Ground</h2>
+      <div class="section-header reveal">
+        <span class="section-label">Transparent &amp; Direct</span>
+        <h2>From your pocket to their phone</h2>
       </div>
-      <div class="partners-grid">
-        <div class="partner-badge">UNHCR Partner</div>
-        <div class="partner-badge">IRC Approved</div>
-        <div class="partner-badge">MSF Network</div>
-        <div class="partner-badge">Save the Children</div>
-        <div class="partner-badge">Charity Commission Registered</div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step-number">1</div>
+          <h3>You Donate</h3>
+          <p>Make a one-off or monthly gift. Every penny funds phone credit — nothing else.</p>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step reveal reveal-delay-1">
+          <div class="step-number">2</div>
+          <h3>We Buy Credit</h3>
+          <p>We buy mobile credit in bulk at reduced rates from network partners worldwide.</p>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step reveal reveal-delay-2">
+          <div class="step-number">3</div>
+          <h3>Partners Deliver</h3>
+          <p>Trusted NGOs on the ground distribute credit directly to verified refugees.</p>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step reveal reveal-delay-3">
+          <div class="step-number">4</div>
+          <h3>Families Reconnect</h3>
+          <p>A call is made. A family is reunited. A life is changed forever.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -217,16 +325,19 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <span class="logo-icon">📱</span>
-        <span class="logo-text">Phone Credit <span class="accent">for Refugees</span></span>
-        <p>Registered Charity No. 1234567 · England & Wales</p>
+        <div class="logo" style="margin-bottom:12px">
+          <span class="logo-icon">📱</span>
+          <span class="logo-text" style="color:#fff">Phone Credit <span class="accent">for Refugees</span></span>
+        </div>
+        <p>Registered Charity No. 1234567<br>England &amp; Wales</p>
+        <p style="margin-top:12px; font-size:0.82rem; opacity:0.4">Made with 💛 for the 100 million</p>
       </div>
       <div class="footer-links">
         <h4>Organisation</h4>
         <ul>
           <li><a href="#about">About Us</a></li>
           <li><a href="#impact">Our Impact</a></li>
-          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#stories">Stories</a></li>
         </ul>
       </div>
       <div class="footer-links">
@@ -253,14 +364,69 @@
   </footer>
 
   <script>
-    let selectedAmount = 5;
-    let selectedFreq = 'one-off';
+    /* ── Navbar scroll ── */
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 40);
+    });
 
+    /* ── Typewriter ── */
+    const phrases = ['Heard Was Goodbye', 'Needed Was a Phone', 'Lost Was a Family', 'Have Left Is Hope'];
+    let phraseIndex = 0, charIndex = 0, deleting = false;
+    const tw = document.getElementById('typewriter');
+    function type() {
+      const current = phrases[phraseIndex];
+      if (!deleting) {
+        tw.textContent = current.slice(0, ++charIndex);
+        if (charIndex === current.length) { deleting = true; setTimeout(type, 2200); return; }
+      } else {
+        tw.textContent = current.slice(0, --charIndex);
+        if (charIndex === 0) { deleting = false; phraseIndex = (phraseIndex + 1) % phrases.length; }
+      }
+      setTimeout(type, deleting ? 45 : 80);
+    }
+    type();
+
+    /* ── Scroll reveal ── */
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => observer.observe(el));
+
+    /* ── Animated counters ── */
+    const counters = document.querySelectorAll('.counter');
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting && !e.target.dataset.done) {
+          e.target.dataset.done = true;
+          const target = +e.target.dataset.target;
+          const duration = 2000;
+          const step = target / (duration / 16);
+          let current = 0;
+          const update = () => {
+            current = Math.min(current + step, target);
+            e.target.textContent = target >= 1000
+              ? (current >= 1000 ? (current/1000).toFixed(1).replace('.0','') + 'k+' : Math.floor(current).toLocaleString())
+              : Math.floor(current) + (target === 98 ? '%' : '');
+            if (current < target) requestAnimationFrame(update);
+            else e.target.textContent = target >= 1000
+              ? (target/1000 + 'k+')
+              : target + (target === 98 ? '%' : '');
+          };
+          requestAnimationFrame(update);
+        }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(c => counterObserver.observe(c));
+
+    /* ── Donate widget ── */
+    let selectedAmount = 5, selectedFreq = 'one-off';
     const impactMessages = {
-      5:  '£5 provides <strong>60 minutes</strong> of phone credit — enough to reunite a family.',
-      10: '£10 provides <strong>2 hours</strong> of calls — enough to navigate asylum registration.',
-      25: '£25 provides <strong>5 hours</strong> of connection for an entire family for a week.',
-      50: '£50 provides <strong>10 hours</strong> — a month of connectivity for a refugee family.'
+      5:  '💛 <strong>£5</strong> gives <strong>60 minutes</strong> — enough for a mother to hear her child\'s voice for the first time in months.',
+      10: '💛 <strong>£10</strong> gives <strong>2 hours</strong> — enough to navigate an asylum application or find missing family.',
+      25: '💛 <strong>£25</strong> gives <strong>5 hours</strong> — a week of connection for an entire displaced family.',
+      50: '💛 <strong>£50</strong> gives <strong>10 hours</strong> — a full month of lifelines for someone with nothing left.'
     };
 
     function selectAmount(btn, amount) {
@@ -287,10 +453,9 @@
     function updatePreview() {
       const preview = document.getElementById('impact-preview');
       const donateBtn = document.getElementById('donate-btn');
-      const msg = impactMessages[selectedAmount] || `<strong>£${selectedAmount}</strong> makes a real difference to a refugee family's life.`;
-      preview.innerHTML = msg;
-      const label = selectedFreq === 'monthly' ? `Donate £${selectedAmount}/month` : `Donate £${selectedAmount} Now`;
-      donateBtn.textContent = label;
+      preview.innerHTML = impactMessages[selectedAmount] || `💛 <strong>£${selectedAmount}</strong> makes a real difference — every pound is phone credit, nothing else.`;
+      const freqLabel = selectedFreq === 'monthly' ? `£${selectedAmount}/month` : `£${selectedAmount}`;
+      donateBtn.textContent = `Donate ${freqLabel} — Give Someone a Voice`;
     }
   </script>
 
