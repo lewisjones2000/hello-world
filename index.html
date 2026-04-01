@@ -1,18 +1,298 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phone Credit for Refugees</title>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
-
 <body>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">
+        <span class="logo-icon">📱</span>
+        <span class="logo-text">Phone Credit <span class="accent">for Refugees</span></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#donate" class="btn-nav">Donate Now</a></li>
+      </ul>
+    </div>
+  </nav>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <span class="badge">Making Connections Matter</span>
+        <h1>A Phone Call Can Change Everything</h1>
+        <p>Refugees fleeing crisis are often cut off from family, emergency services, and vital information. We bridge that gap by donating phone credit to those who need it most.</p>
+        <div class="hero-actions">
+          <a href="#donate" class="btn-primary">Donate Phone Credit</a>
+          <a href="#how-it-works" class="btn-secondary">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="phone-card">
+          <div class="phone-icon">📞</div>
+          <p class="phone-stat">Every £5 provides</p>
+          <h2 class="phone-minutes">60 minutes</h2>
+          <p class="phone-sub">of life-changing connection</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <h3>12,000+</h3>
+        <p>Refugees Helped</p>
+      </div>
+      <div class="stat-item">
+        <h3>48 Countries</h3>
+        <p>Reached Worldwide</p>
+      </div>
+      <div class="stat-item">
+        <h3>£250,000+</h3>
+        <p>Credit Donated</p>
+      </div>
+      <div class="stat-item">
+        <h3>98%</h3>
+        <p>Funds to Beneficiaries</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="container about-grid">
+      <div class="about-text">
+        <span class="section-label">Our Mission</span>
+        <h2>Staying Connected is a Human Right</h2>
+        <p>When people are forced to flee their homes, they lose almost everything — including the ability to stay in contact with loved ones, access emergency help, or navigate an unfamiliar country.</p>
+        <p>Phone Credit for Refugees is a registered non-profit that sources and distributes mobile phone credit directly to refugees in camps, transit zones, and resettlement centres around the world.</p>
+        <ul class="about-list">
+          <li>✅ Contact with family separated by conflict</li>
+          <li>✅ Access to emergency and legal services</li>
+          <li>✅ Navigation tools and translation apps</li>
+          <li>✅ Registration with aid organisations</li>
+        </ul>
+      </div>
+      <div class="about-quote">
+        <blockquote>
+          "The first thing I did when I got phone credit was call my mother. She had not heard from me in four months. I cannot explain what that meant."
+          <cite>— Amara, 27, arrived from Sudan</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact -->
+  <section class="impact section" id="impact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Real Impact</span>
+        <h2>Where Your Donation Goes</h2>
+      </div>
+      <div class="impact-grid">
+        <div class="impact-card">
+          <div class="impact-icon">👨‍👩‍👧</div>
+          <h3>Family Reunification</h3>
+          <p>Helping displaced people locate and communicate with family members separated during flight.</p>
+        </div>
+        <div class="impact-card">
+          <div class="impact-icon">🚨</div>
+          <h3>Emergency Access</h3>
+          <p>Ensuring refugees can reach emergency services, legal aid, and medical support when needed.</p>
+        </div>
+        <div class="impact-card">
+          <div class="impact-icon">🗺️</div>
+          <h3>Safe Navigation</h3>
+          <p>Access to maps, translation tools, and safety information for people in unfamiliar territory.</p>
+        </div>
+        <div class="impact-card">
+          <div class="impact-icon">📋</div>
+          <h3>Registration & Aid</h3>
+          <p>Communicating with UNHCR, NGOs, and government bodies to secure asylum and essential aid.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="how-it-works section" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">The Process</span>
+        <h2>How It Works</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>You Donate</h3>
+          <p>Make a one-off or monthly donation. Every pound goes towards purchasing mobile phone credit.</p>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>We Source Credit</h3>
+          <p>We partner with mobile networks worldwide to buy credit at bulk rates, maximising your impact.</p>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Partners Distribute</h3>
+          <p>Our on-the-ground NGO partners distribute credit directly to verified refugees in need.</p>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>Lives Are Changed</h3>
+          <p>Refugees make vital calls, access critical services, and maintain their dignity and hope.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donate -->
+  <section class="donate section" id="donate">
+    <div class="container donate-inner">
+      <div class="section-header light">
+        <span class="section-label light">Make a Difference</span>
+        <h2>Donate Today</h2>
+        <p>Choose an amount below or enter your own. Every donation connects a refugee with someone they love.</p>
+      </div>
+      <div class="donate-form-wrap">
+        <div class="amount-options">
+          <button class="amount-btn active" onclick="selectAmount(this, 5)">£5</button>
+          <button class="amount-btn" onclick="selectAmount(this, 10)">£10</button>
+          <button class="amount-btn" onclick="selectAmount(this, 25)">£25</button>
+          <button class="amount-btn" onclick="selectAmount(this, 50)">£50</button>
+        </div>
+        <div class="custom-amount">
+          <label for="custom">Or enter your own amount:</label>
+          <div class="input-wrap">
+            <span class="currency">£</span>
+            <input type="number" id="custom" placeholder="0.00" min="1" oninput="customAmount(this)" />
+          </div>
+        </div>
+        <div class="impact-preview" id="impact-preview">
+          <strong>£5</strong> provides <strong>60 minutes</strong> of phone credit — enough to reunite a family.
+        </div>
+        <div class="frequency-options">
+          <button class="freq-btn active" onclick="selectFreq(this, 'one-off')">One-off</button>
+          <button class="freq-btn" onclick="selectFreq(this, 'monthly')">Monthly</button>
+        </div>
+        <a href="#" class="btn-donate" id="donate-btn">Donate £5 Now</a>
+        <p class="secure-note">🔒 Secure payment · Registered charity · Gift Aid eligible</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners -->
+  <section class="partners section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Our Partners</span>
+        <h2>Working Together on the Ground</h2>
+      </div>
+      <div class="partners-grid">
+        <div class="partner-badge">UNHCR Partner</div>
+        <div class="partner-badge">IRC Approved</div>
+        <div class="partner-badge">MSF Network</div>
+        <div class="partner-badge">Save the Children</div>
+        <div class="partner-badge">Charity Commission Registered</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">📱</span>
+        <span class="logo-text">Phone Credit <span class="accent">for Refugees</span></span>
+        <p>Registered Charity No. 1234567 · England & Wales</p>
+      </div>
+      <div class="footer-links">
+        <h4>Organisation</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#impact">Our Impact</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Get Involved</h4>
+        <ul>
+          <li><a href="#donate">Donate</a></li>
+          <li><a href="#">Fundraise</a></li>
+          <li><a href="#">Volunteer</a></li>
+          <li><a href="#">Corporate Partners</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@phonecreditforrefugees.org">hello@phonecreditforrefugees.org</a></li>
+          <li><a href="#">Press enquiries</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Phone Credit for Refugees. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    let selectedAmount = 5;
+    let selectedFreq = 'one-off';
+
+    const impactMessages = {
+      5:  '£5 provides <strong>60 minutes</strong> of phone credit — enough to reunite a family.',
+      10: '£10 provides <strong>2 hours</strong> of calls — enough to navigate asylum registration.',
+      25: '£25 provides <strong>5 hours</strong> of connection for an entire family for a week.',
+      50: '£50 provides <strong>10 hours</strong> — a month of connectivity for a refugee family.'
+    };
+
+    function selectAmount(btn, amount) {
+      document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById('custom').value = '';
+      selectedAmount = amount;
+      updatePreview();
+    }
+
+    function customAmount(input) {
+      document.querySelectorAll('.amount-btn').forEach(b => b.classList.remove('active'));
+      selectedAmount = parseFloat(input.value) || 0;
+      updatePreview();
+    }
+
+    function selectFreq(btn, freq) {
+      document.querySelectorAll('.freq-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      selectedFreq = freq;
+      updatePreview();
+    }
+
+    function updatePreview() {
+      const preview = document.getElementById('impact-preview');
+      const donateBtn = document.getElementById('donate-btn');
+      const msg = impactMessages[selectedAmount] || `<strong>£${selectedAmount}</strong> makes a real difference to a refugee family's life.`;
+      preview.innerHTML = msg;
+      const label = selectedFreq === 'monthly' ? `Donate £${selectedAmount}/month` : `Donate £${selectedAmount} Now`;
+      donateBtn.textContent = label;
+    }
+  </script>
 
 </body>
 </html>
